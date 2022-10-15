@@ -5,10 +5,11 @@ import banner2 from '../../image/banner2.webp';
 import banner3 from '../../image/banner3.jpg';
 
 
-
 const Home = () => {
     return (
-        <Carousel>
+     
+      <div>
+          <Carousel>
       <Carousel.Item>
         <img style={{height:'600px'}}
           className="d-block w-100"
@@ -47,6 +48,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+      </div>
     );
 };
 

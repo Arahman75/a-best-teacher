@@ -1,9 +1,98 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
-            <h2>This is footer</h2>
+
+        <div className='footer'>
+            <div className="footer-input">
+                <h3>SUBSCRIBE OUR WEBSITE</h3>
+                <div>
+                    <input className='search-field' type="email" name="" id="" placeholder='Enter your email' />
+                    <input className='submit-button' type="submit" value="SUBSCRIBE" />
+                </div>
+                <h3>BACK TO TOP</h3>
+            </div>
+            <hr />
+            <div className='row footer-info'>
+                <div className="col-3">
+                    <h6>OUR COLLECTIONS</h6>
+                    <div className="row">
+                        <div className="col-6">
+                         <p>Contact Us</p>
+                         <p>About Us</p>
+                         <p>Login</p>
+                         <p>Register</p>
+                         <p>Wish list</p>
+                        </div>
+                        <div className="col-6">
+                           <p>Discount</p>
+                           <p>Vouches</p>
+                           <p>Spring</p>
+                           <p>Collection</p>
+                           <p>Trending</p>
+                           <p>Best Seller</p>
+                           <p>International</p>
+                
+
+                        </div>
+                    </div>
+                </div>
+                <div className="col-3">
+                <h6>CUSTOMER SERVICES</h6>
+                <div className="row">
+                    <div className="col-6">
+                        <p>Cables</p>
+                        <p>Adapters</p>
+                        <p>Electronic</p>
+                        <p>Batteries</p>
+                        <p>Chargers</p>
+                    </div>
+                    <div className="col-6">
+<p>Home Audion</p>
+<p>Televisions</p>
+<p>TV Receivers</p>
+<p>Projectors</p>
+<p>Audio Amplifier</p>
+                    </div>
+                </div>
+
+                </div>
+                <div className="col-3">
+                <h6>INFORMATION</h6>
+                <div className="row">
+                    <div className="col-6">
+<p>Bags</p>
+<p>Glasses</p>
+<p>Accessories</p>
+<p>Shoes</p>
+<p>Toys</p>
+                    </div>
+                    <div className="col-6">
+<p>Top</p>
+<p>Button</p>
+<p>Accessories</p>
+<p>Shoes</p>
+<p>Best Seller</p>
+                    </div>
+                </div>
+
+                </div>
+                <div className="col-3">
+                <h6>YOU AND ME SHOP</h6>
+                <div className="row">
+                    <div className="col-12">
+                        <p>Location: Bangladesh, Chattogram</p>
+                        <p>+088 01824 221133</p>
+                        <p>shada.kala@gamil.com</p>
+
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
         </div>
     );
 };
