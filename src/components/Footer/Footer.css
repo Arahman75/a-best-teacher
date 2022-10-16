@@ -35,3 +35,11 @@
     line-height: 10px;
     font-weight: 400;
 }
+.footer-copy p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.social-icon i{
+   font-size: 30px;
+   margin-right: 20px;
+}

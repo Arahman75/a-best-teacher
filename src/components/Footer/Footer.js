@@ -4,6 +4,9 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <div><FontAwesomeIcon icon="fa-solid fa-location-dot" />
             <div className='footer'>
@@ -88,11 +91,17 @@ const Footer = () => {
                                 <p><FontAwesomeIcon icon={faPhoneVolume} />  +088 01824 221133</p>
 
                                 <p> <FontAwesomeIcon icon={faEnvelope} /> shada.kala@gamil.com</p>
+                                <p className='social-icon'> <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-instagram"></i></p>
                               </div>
                         </div>
 
                     </div>
 
+                </div>
+                <div className="footer-copy">
+               
+                    <p>All Content Reserved <i class="fa-regular fa-copyright"></i> by {year} Abdur Rahman.</p>
+                   
                 </div>
             </div>
         </div>
