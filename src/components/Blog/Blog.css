@@ -1,0 +1,20 @@
+.blog{
+
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: -4px -2px 18px 11px rgba(138,81,81,0.75);
+-webkit-box-shadow: -4px -2px 18px 11px rgba(138,81,81,0.75);
+-moz-box-shadow: -4px -2px 18px 11px rgba(138,81,81,0.75);
+}
+.blog:hover{
+    box-shadow: -10px 11px 0px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 11px 0px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 11px 0px 1px rgba(0,0,0,0.75);
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}

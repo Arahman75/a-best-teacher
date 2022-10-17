@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Login.css';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
@@ -20,6 +20,8 @@ const Login = () => {
         loading,
         error
       ] = useSignInWithEmailAndPassword(auth);
+      const [signInWithGoogle] = useSignInWithGoogle(auth);
+
 
     const handleEmailBlur = event =>{
        setEmail(event.target.value)
@@ -38,6 +40,11 @@ event.preventDefault();
 signInWithEmailAndPassword(email, password);
 // console.log(email, password);
     }
+const handleGoogleSignIn=()=>{
+    signInWithGoogle()
+}
+
+
     return (
 
         <div className="form-container">
@@ -64,6 +71,8 @@ signInWithEmailAndPassword(email, password);
     </Form>
             
             </div>
+
+            <Button className='mt-5' onClick={handleGoogleSignIn} variant='info'>Google Sign In</Button>
 
         </div>
 

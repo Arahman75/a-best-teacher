@@ -8,6 +8,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/aboutMe' element={<AboutMe></AboutMe>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
