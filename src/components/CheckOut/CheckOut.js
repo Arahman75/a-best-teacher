@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './CheckOut.css';
 
 const CheckOut = () => {
@@ -38,8 +39,11 @@ const CheckOut = () => {
         Login
       </Button> */}
     </Form>
+    
         </div>
+
            </div>
+          
         </div>
     );
 };

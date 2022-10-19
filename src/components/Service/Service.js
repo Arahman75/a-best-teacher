@@ -1,10 +1,15 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({service}) => {
-    const {img, price, name, description} = service;
+    const {id, img, price, name, description} = service;
+
+    const navigate = useNavigate();
+    const navigateServiceDetails=(id)=>{
+      navigate(`/service/${id}`);
+    }
     return (
        <div className='service'>
          <div>
@@ -15,7 +20,8 @@ const Service = ({service}) => {
             <p>{description}</p>
            </div>
         </div>
-      <Button className='info-btn' variant='info'><Link to='/checkout'>Service Details</Link></Button>
+      {/* <Button className='info-btn' variant='info'><Link to='/checkout'>Service Details</Link></Button> */}
+      <button onClick={()=> navigateServiceDetails(id)}>Service Details</button>
        </div>
     );
 };
