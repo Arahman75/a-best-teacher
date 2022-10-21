@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Login.css';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 
 const Login = () => {
 

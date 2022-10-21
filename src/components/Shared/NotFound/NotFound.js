@@ -1,5 +1,5 @@
 import React from 'react';
-import notFound from '../../image/notfound.png';
+import notFound from '../../../image/notfound.png';
 import './NotFound.css';
 
 const NotFound = () => {
@@ -12,16 +12,7 @@ const NotFound = () => {
             </div>
           </div>
         </div>
-/**
- *  service image link..service2:https://i.ibb.co/x6rG4v6/service2.jpg
- * "https://i.ibb.co/pWdbRGm/service6.jpg"
- * * */
-       
-/**
- * education image link
- *
- * 
- */
+
     );
 };
 

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
-import auth from '../../firebase.init';
+import auth from '../../../firebase.init';
+
 
 
 const Register = () => {
@@ -41,6 +42,7 @@ if(user){
  }
  createUserWithEmailAndPassword(email, password);
      }
+     
     return (
         <div className="form-container">
         <div>

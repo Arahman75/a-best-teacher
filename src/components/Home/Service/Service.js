@@ -21,7 +21,7 @@ const Service = ({service}) => {
            </div>
         </div>
       {/* <Button className='info-btn' variant='info'><Link to='/checkout'>Service Details</Link></Button> */}
-      <button onClick={()=> navigateServiceDetails(id)}>Service Details</button>
+      <button className='info-btn' onClick={()=> navigateServiceDetails(id)}>Service Details</button>
        </div>
     );
 };

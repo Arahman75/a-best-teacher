@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faEnvelope, faLocation, faLocationArrow, faLocationPin, faPhoneVolume, faRetweet } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationPin, faPhoneVolume,  } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Footer.css';
 
@@ -92,16 +92,16 @@ const Footer = () => {
 
                                 <p> <FontAwesomeIcon icon={faEnvelope} /> shada.kala@gamil.com</p>
                                 <p className='social-icon'> <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-instagram"></i></p>
-                              </div>
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
                 <div className="footer-copy">
-               
+
                     <p>All Content Reserved <i class="fa-regular fa-copyright"></i> by {year} Abdur Rahman.</p>
-                   
+
                 </div>
             </div>
         </div>
