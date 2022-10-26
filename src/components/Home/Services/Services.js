@@ -8,17 +8,20 @@ const Services = () => {
 useEffect(()=>{
   fetch('services.json')
   .then(res => res.json())
-  .then(data =>setServices(data));
+  .then(data => setServices(data))
 },[])
     return (
-        <div className='services'>
+     
+          <div className='services'>
    {
       services.map(service =><Service 
       key={service.id}
       service={service}
       ></Service>)
     }
-   </div>
+      </div>
+     
+  
     );
 };
 
