@@ -50,14 +50,3 @@ const CheckOut = () => {
 
 export default CheckOut;
 
-{/*
-"https://i.ibb.co/k3ZtfwY/english.jpg"
-"https://i.ibb.co/fpCwFny/math.jpg"
-"https://i.ibb.co/jD41GyR/ict.jpg"
-"https://i.ibb.co/9tTD4d0/basic-computer.jpg"
-"https://i.ibb.co/m57LXGN/health.png"
-"https://i.ibb.co/Wtng6JY/accounting.webp"
-"https://i.ibb.co/NVdzV0W/managment.png"
-"https://i.ibb.co/n1M4JqK/chemistry.jpg"
-"https://i.ibb.co/zm6fXtz/special-english.png"
-*/}
